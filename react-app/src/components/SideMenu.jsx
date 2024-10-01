@@ -2,13 +2,16 @@ function SideMenu() {
     return (
         <div class = 'sidebar'>
             <div>
-                <a href="/" class = 'sidebar-btn'>Profile</a>
+                <a href="/" className = 'sidebar-btn'>Profile</a>
             </div>
             <div>
-                <a href="/" class = 'sidebar-btn'>Chat</a>
+                <a href="/" className = 'sidebar-btn'>Chat</a>
             </div>
             <div>
-                <a href="/" class = 'sidebar-btn'>My Listings</a>
+                <a href="/" className = 'sidebar-btn'>My Listings</a>
+            </div>
+            <div className = 'bottom-btn'>
+                <a href="/" className = 'sidebar-btn'>Settings</a>
             </div>
         </div>
     );
