@@ -4,6 +4,9 @@
     border: 0px;
     margin: 0px;
     padding: 0px;
+    position: absolute;
+    width: 100%;
+    height: 12%;
 }
 
 .header h1 {
@@ -29,17 +32,14 @@
     display: inline-block;
 }
 
-.colDiv {
-    height: 100%
-}
-
 .sidebar {
-    display: inline-block;
+    position: absolute;
     background-color: rgb(48, 64, 76);
     color: white;
     text-align: left;
     width: 15%;
-    margin: 0px;
+    height: 100%;
+    margin-top: 6%;
     padding: 0px;
     border: 0px;
 }
@@ -50,12 +50,40 @@
 }
 
 .listing-section {
-    display: inline-block;
-    flex: 1;
+    position: absolute;
     background-color: rgb(70, 93, 110);
-    margin: 0px;
+    margin-left: 15%;
+    margin-top: 6%;
+    width: 85%;
+    height: 100%;
     padding: 0px;
     border: 0px;
+}
+
+.listing-image {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 75%;
+}
+
+.listing-btns {
+    text-align: center;
+    color: white;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+.listing-btns h2 {
+    display: inline-block;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: rgb(48, 64, 76);
+    cursor: pointer;
 }
 
 a {

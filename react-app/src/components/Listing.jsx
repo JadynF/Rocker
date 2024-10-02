@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 
 function Listing() {
-    const images = ['./src/assets/chair1.webp', './src/assets/chair2.webp'];
-    const [shownImage, setShownImage] = useState(images[0]);
+    const images = ['./src/assets/chair1.webp', './src/assets/chair2.webp', './src/assets/chair3.webp', './src/assets/chair4.jpg', './src/assets/chair5.webp'];
+    const [imageIndex, setImageIndex] = useState(0)
+    const [shownImage, setShownImage] = useState(images[imageIndex]);
 
     const handleShownImage = (event) => {
-        console.log('changed image')
-        setShownImage(images[0] == shownImage ? images[1] : images[0]);
+        if (imageIndex >= images.length - 1)
+            setImageIndex(0);
+        else
+            setImageIndex(imageIndex + 1);
+        
+        setShownImage(images[imageIndex]);
     }
 
     return (

@@ -7,10 +7,8 @@ function App() {
   return (
     <>
       <Header/>
-      <div className = 'colDiv'>
-        <SideMenu/>
-        <Listing/>
-      </div>
+      <SideMenu/>
+      <Listing/>
     </>
   );
 }
