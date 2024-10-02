@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header/>
-      <div className = 'colDiv'>
+      <div className = 'flex-container'>
         <SideMenu/>
         <Listing/>
       </div>

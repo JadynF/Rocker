@@ -7,9 +7,7 @@
     margin: 0px;
     padding: 0px;
     outline: none;
-    display: flex;
     align-items: center;
-    ;
 }
 
 .header h1 {
@@ -32,13 +30,39 @@
     width: 10%;
 }
 
-.colDiv {
+.flex-container {
     display: flex;
+    flex-direction: row;
+    flex-grow: 3;
     border: 0px;
     margin: 0px;
     padding: 0px;
-    height: 90%;
     width: 100%
+}
+
+.listing-section {
+    border: 0px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    display: block;
+}
+
+.listing-section img {
+    width: 60%;
+    padding: 50px;
+    display: block
+}
+
+.listing-side {
+}
+
+.listing-section h2 {
+    color: white;
+    background-color: rgb(48, 64, 76);
+    padding: 5px;
+    display: block;
 }
 
 .sidebar {
