@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 
 function Listing() {
     const images = ['./src/assets/chair1.webp', './src/assets/chair2.webp', './src/assets/chair3.webp', './src/assets/chair4.jpg', './src/assets/chair5.webp'];
-    const [imageIndex, setImageIndex] = useState(0)
+    const [imageIndex, setImageIndex] = useState(0) // default image is first index
     const [shownImage, setShownImage] = useState(images[imageIndex]);
 
     const handleShownImage = (event) => {
+
+        // handle web server requests here when available
+        // possibly keep a queue of listings, when reach end of queue send request for more
+
         if (imageIndex >= images.length - 1)
             setImageIndex(0);
         else

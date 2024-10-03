@@ -1,6 +1,6 @@
-function SideMenu() {
+function SideMenu({ isMenuVisible }) {
     return (
-        <div class = 'sidebar'>
+        <div class = {isMenuVisible ? 'sidebar' : 'sidebar hidden'}>
             <div>
                 <a href="/" className = 'sidebar-btn'>Profile</a>
             </div>

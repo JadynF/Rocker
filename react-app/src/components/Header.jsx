@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 
-function Header() {
-    const [showMenu, setShowMenu] = useState(true);
-
-    const handleMenuVis = (event) => {
-        setShowMenu(prev => !prev);
-    }
-
+function Header({ isMenuVisible, toggleMenu } ) {
     return (
         <div className = 'header'>
-            <h2 onClick = {handleMenuVis}> {showMenu ? 'Showing Menu' : 'Hiding Menu'} </h2>
+            <h2 onClick = {toggleMenu}> {isMenuVisible ? 'Hide Menu' : 'Show Menu'} </h2>
             <h1> Rockr </h1>
         </div>
     );
