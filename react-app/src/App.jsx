@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header/>
-      <div className = 'flex-container'>
+      <div className = 'main-container'>
         <SideMenu/>
         <Listing/>
       </div>

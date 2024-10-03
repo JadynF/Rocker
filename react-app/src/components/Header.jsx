@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Header() {
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(true);
 
     const handleMenuVis = (event) => {
         setShowMenu(prev => !prev);

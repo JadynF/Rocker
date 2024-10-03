@@ -1,12 +1,27 @@
+import React, { useState } from 'react';
+
 function Listing() {
+    const images = ['./src/assets/chair1.webp', './src/assets/chair2.webp', './src/assets/chair3.webp', './src/assets/chair4.jpg', './src/assets/chair5.webp'];
+    const [imageIndex, setImageIndex] = useState(0)
+    const [shownImage, setShownImage] = useState(images[imageIndex]);
+
+    const handleShownImage = (event) => {
+        if (imageIndex >= images.length - 1)
+            setImageIndex(0);
+        else
+            setImageIndex(imageIndex + 1);
+        
+        setShownImage(images[imageIndex]);
+    }
+
     return (
         <div className = 'listing-section'>
             <div className = 'listing-image'>
-                <img src = '.\src\assets\chair1.webp'></img>
+                <img src = {shownImage}></img>
             </div>
-            <div className = 'listing-side'>
-                <h2>YES!</h2>
-                <h2>NO!</h2>
+            <div className = 'listing-btns'>
+                <h2 onClick = {handleShownImage}>NO!</h2>
+                <h2 onClick = {handleShownImage}>YES!</h2>
             </div>
         </div>
     );
