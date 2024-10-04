@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function Listing() {
     const images = ['./src/assets/chair1.webp', './src/assets/chair2.webp', './src/assets/chair3.webp', './src/assets/chair4.jpg', './src/assets/chair5.webp'];
-    const [imageIndex, setImageIndex] = useState(0) // default image is first index
+    const [imageIndex, setImageIndex] = useState(0); // default image is first index
     const [shownImage, setShownImage] = useState(images[imageIndex]);
 
     const handleShownImage = (event) => {

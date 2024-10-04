@@ -11,11 +11,14 @@ function App() {
     setIsMenuVisible(prev => !prev);
   }
 
+  const menuNames = ["Profile", "Chat", "My Listings", "Settings"];
+  const menuLinks = ["/", "/", "/", "/"]
+
   return (
     <>
       <Header isMenuVisible = {isMenuVisible} toggleMenu = {toggleMenu}/>
       <div className = 'main-container'>
-        <SideMenu isMenuVisible = {isMenuVisible}/>
+        <SideMenu isMenuVisible = {isMenuVisible} menuNames = {menuNames} menuLinks = {menuLinks}/>
         <Listing/>
       </div>
     </>
